@@ -10,6 +10,8 @@ public class StackDemo {
         stack.push(10);
         stack.push(20);
         stack.push(30);
+        stack.push(40);
+        stack.push(50);
 
         // Remove element
         int removedElement = stack.pop();
@@ -23,6 +25,9 @@ public class StackDemo {
         System.out.println("All elements:");
         stack.forEach(System.out::println);
 
+        // Iterate over elements using forEach
+        System.out.println("Iterate over elements using forEach:");
+        stack.forEach(System.out::println);
         // Iterate over elements using Stream API and lambda expression
         System.out.println("Iterating over elements using Stream API:");
         stack.stream().forEach(System.out::println);
